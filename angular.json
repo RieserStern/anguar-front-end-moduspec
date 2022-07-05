@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "moduspec": {
+    "moduc": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/moduspec",
+            "outputPath": "dist/moduc",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,8 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "styles.css",
-              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -65,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "moduspec:build:production"
+              "browserTarget": "moduc:build:production"
             },
             "development": {
-              "browserTarget": "moduspec:build:development"
+              "browserTarget": "moduc:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "moduspec:build"
+            "browserTarget": "moduc:build"
           }
         },
         "test": {
@@ -91,8 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "styles.css",
-              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -101,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "e93b05d2-cf16-451f-bc51-0b6fed00acad"
+    "analytics": "612f0444-68dd-4850-bd9d-e634299e414e"
   }
 }
