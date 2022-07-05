@@ -1,0 +1,1 @@
+"# anguar-front-end-moduspec" 
