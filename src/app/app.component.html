@@ -51,10 +51,42 @@
             </ul>
           </div>
         </div>
-        <div>
-
+        <div class="power-commun">
+          <div class="stack-field power">
+            <h3>Power</h3>
+            <ul>
+              <li>Surface Power</li>
+              <li>Subsea Power</li>
+            </ul>
+          </div>
+          <div class="stack-field communications">
+            <h3>Communications</h3>
+            <ul>
+              <li>Surface Comm.</li>
+              <li>Surface Comm.</li>
+            </ul>
+          </div>
         </div>
-        <div></div>
+        <div class="hydra-pod">
+          <div class="stack-field hydra">
+            <h3>Hydraulics</h3>
+            <ul>
+              <li>HPU</li>
+              <li>Mixing System</li>
+            </ul>
+          </div>
+          <div class="stack-field pod">
+            <h3>Pod</h3>
+            <ul>
+              <li>Blue Pod</li>
+              <li>Yellow Pod</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="event-table">
+        <h3>Event Logger</h3>
+
       </div>
     </div>
     <div class="table" id="statusTable"></div>
@@ -195,7 +227,7 @@
 
   .content {
     width: 1920px;
-    height: 980px;
+    height: 1052px;
     background: rgb(0 84 84);
   }
 
@@ -214,7 +246,7 @@
 
   .health-table {
     Width: 408px;
-    height: 633px;
+    height: 666px;
     padding: 16px;
     background: rgb(0 65 65);
   }
@@ -288,6 +320,111 @@
     width: 142px;
     height: 220px;
     left: 193px;
+  }
+
+  .power-commun {
+    width: 376px;
+    height: 120px;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .stack-field {
+    background: rgba(25, 84, 84, 0.51);
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+  }
+
+  .stack-field h3 {
+    width: 43px;
+    height: 16px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A7C9C9;
+    margin-left: 10px;
+  }
+
+  .stack-field ul {
+    width: 150px;
+    height: 16px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #00E3A9;
+    position: absolute;
+  }
+
+  .stack-field li {
+    width: 150px;
+    margin-bottom: 10px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #00E3A9;
+  }
+
+  .power {
+    position: absolute;
+    left: 16px;
+  }
+
+  .hydra-pod {
+    width: 376px;
+    height: 120px;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .communications {
+    position: absolute;
+    left: 240px;
+  }
+
+  .hydra {
+    position: absolute;
+    left: 16px;
+  }
+
+  .pod {
+    position: absolute;
+    left: 240px;
+  }
+
+  .event-table {
+    box-sizing: border-box;
+    position: absolute;
+    width: 440px;
+    height: 299px;
+    background: rgba(0, 46, 46, 0.5);
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  .event-table h3 {
+    position: absolute;
+    width: 116px;
+    height: 21px;
+    left: 16px;
+    top: 16px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #A7C9C9;
   }
 
 </style>
