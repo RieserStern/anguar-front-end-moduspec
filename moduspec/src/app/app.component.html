@@ -1,0 +1,156 @@
+
+<!-- Header -->
+
+<div class="hearder">
+  <div class="status-bar">
+    <img class="title-img" src="../assets/images/title.png" />
+    <p class="status-txt">RTM to Rig Connectivity Status:</p>
+    <div class="connect-status status-field">
+      <img src="../assets/images/Status.png" />
+      <p>Connected</p>
+    </div>
+    <p class="compliance-txt">Compliance Status</p>
+    <div class="compliance-status status-field">
+      <img src="../assets/images/compliance.png">
+      <p>Compliant</p>
+    </div>
+  </div>
+  
+  <div class="menu-bar">
+    <div class="btn btn-overview"><P>OVERVIEW</P></div>
+    <div class="btn btn-rtm"><P>RTM</P></div>
+    <div class="btn btn-failure"><P>FAILURE PROPAGATION</P></div>
+  </div>
+</div>
+
+<div class="content" role="main">
+</div>
+
+<style>
+  .status-bar {
+    width: 100%;
+    height: 40px;
+    background: #003636;
+  }
+
+  .status-field {
+    float: left;
+  }
+
+  .title-img {
+    Width: 141.95px;
+    Height: 53.54px;
+    float: left;
+    margin-left: 114px;
+  }
+
+  .status-txt {
+    float: left;
+    margin-left: 279.05px;
+    width: 199px;
+    height: 16px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .connect-status {
+    margin-left: 16px;
+  }
+
+  .connect-status img {
+    float: left;
+    margin-top: 7.95px;
+  }
+
+  .connect-status p {
+    float: left;
+    margin-left: 7.61px;
+    color: #00E3A9;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .compliance-txt {
+    float: left;
+    margin-left: 48px;
+    width: 122px;
+    height: 16px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff80;
+  }
+  
+  .compliance-status {
+    margin-left: 16px;
+  }
+
+  .compliance-status img {
+    float: left;
+    margin-top: 7.95px;
+  }
+
+  .compliance-status p {
+    float: left;
+    margin-left: 7.61px;
+    color: #00E3A9;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .menu-bar {
+    width: 100%;
+    height: 40px;
+    background: #004141;
+  }
+
+  .btn {
+    float: left;
+  }
+
+  .btn p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #00E3A9;
+  }
+
+  .btn-overview {
+    width: 144px;
+    height: 40px;
+    background: rgba(0, 227, 169, 0.1);
+  }
+
+  .btn-rtm {
+    width: 144px;
+    height: 40px;
+    background: rgba(0, 227, 169, 0.1);
+  }a
+
+  .btn-failure {
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 227, 169, 0.1);
+  }
+
+</style>
+
+<router-outlet></router-outlet>
