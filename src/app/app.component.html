@@ -24,6 +24,42 @@
 </div>
 
 <div class="content" role="main">
+  <div class="main-table">
+    <div class="table" id="overviewTable">
+      <div class="health-table">
+        <h2>Health</h2>
+        <div class="bop-stack">
+          <h3>BOP Stack</h3>
+          <div class="frame-list">
+            <ul>
+              <li>Upper Annular</li>
+              <li>Lower Annular</li>
+              <li>Gas Bleed Valve</li>
+              <li>LMRP Connector</li>
+              <li>Choke Connector</li>
+              <li>Kill Connector</li>
+              <li>Wellhead Connector</li>
+            </ul>
+            <ul>
+              <li>Upper Blind Shear</li>
+              <li>Lower Blind Shear</li>
+              <li>Casing Shear Ram</li>
+              <li>Upper Pipe Ram</li>
+              <li>Middle Pipe Ram</li>
+              <li>Lower Pipe Ram</li>
+              <li>Test Ram</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div class="table" id="statusTable"></div>
+    <div class="table" id="processTable"></div>
+  </div>
 </div>
 
 <style>
@@ -134,21 +170,124 @@
   }
 
   .btn-overview {
+    left: 114px;
+    position: absolute;
     width: 144px;
     height: 40px;
     background: rgba(0, 227, 169, 0.1);
   }
 
   .btn-rtm {
+    left: 260px;
+    position: absolute;
     width: 144px;
     height: 40px;
-    background: rgba(0, 227, 169, 0.1);
-  }a
+    background: #004141;
+  }
 
   .btn-failure {
+    left: 400px;
+    position: absolute;
     width: 250px;
     height: 40px;
-    background: rgba(0, 227, 169, 0.1);
+    background: #004141;
+  }
+
+  .content {
+    width: 1920px;
+    height: 980px;
+    background: rgb(0 84 84);
+  }
+
+  .main-table {
+    width: 1680px;
+    height: 948px;
+    left: 120px;
+    top: 96px;
+    position: absolute;
+  }
+
+  #overviewTable {
+    width: 408px;
+    /* height: 964px; */
+  }
+
+  .health-table {
+    Width: 408px;
+    height: 633px;
+    padding: 16px;
+    background: rgb(0 65 65);
+  }
+
+  .health-table h2 {
+    width: 56px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #A7C9C9;
+  }
+
+  .bop-stack {
+    padding: 16px;
+    gap: 24px;
+    width: 376px;
+    height: 292px;
+    background: rgba(25, 84, 84, 0.5);
+    border-radius: 8px;
+  }
+
+  .bop-stack h3 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A7C9C9;
+  }
+
+  .frame-list {
+    width: 319px;
+    height: 220px;
+    position: absolute;
+  }
+
+  .frame-list ul > li {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #00E3A9;
+  }
+
+  .frame-list ul:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+    position: absolute;
+    width: 155px;
+    height: 220px;
+    left: 16px;
+  }
+
+  .frame-list ul:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+    position: absolute;
+    width: 142px;
+    height: 220px;
+    left: 193px;
   }
 
 </style>
